@@ -44,6 +44,17 @@ const config = [{
     path: path.resolve(__dirname, 'js'),
     filename: 'main.js'
   },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: 'babel-loader'
+        }
+      }
+    ]
+  }
 }];
 
 module.exports = config;

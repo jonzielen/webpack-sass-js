@@ -68,22 +68,31 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-(function() {
-  console.log('TEST');
+"use strict";
 
-  var newDiv = document.createElement('DIV');
-  newDiv.innerHTML = 'hello';
-  newDiv.classList.add('jom');
-  document.getElementsByTagName('body')[0].appendChild(newDiv);
 
-  var div2 = document.createElement('DIV');
-  div2.innerHTML = 'second div!!';
-  div2.classList.add('div-2');
-  document.getElementsByTagName('body')[0].appendChild(div2);
+(function () {
+  function createStuff() {
+    var elem = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'DIV';
+    var text = arguments[1];
+    var className = arguments[2];
+
+    var newElem = document.createElement(elem);
+    newElem.innerHTML = text;
+    newElem.classList.add(className);
+    document.getElementsByTagName('body')[0].appendChild(newElem);
+  }
+
+  createStuff('DIV', 'hello', 'jom');
+  createStuff('DIV', 'second div!!', 'div-2');
+
+  var name = 'Jon';
+  var nameString = 'My name is ' + name + '.';
+
+  createStuff('h5', nameString, 'div-2');
 })();
-
 
 /***/ }),
 /* 1 */

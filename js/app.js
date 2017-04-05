@@ -1,13 +1,16 @@
 (function() {
-  console.log('TEST');
+  function createStuff(elem = 'DIV', text, className) {
+    var newElem = document.createElement(elem);
+    newElem.innerHTML = text;
+    newElem.classList.add(className);
+    document.getElementsByTagName('body')[0].appendChild(newElem);
+  }
 
-  var newDiv = document.createElement('DIV');
-  newDiv.innerHTML = 'hello';
-  newDiv.classList.add('jom');
-  document.getElementsByTagName('body')[0].appendChild(newDiv);
+  createStuff('DIV', 'hello', 'jom');
+  createStuff('DIV', 'second div!!', 'div-2');
 
-  var div2 = document.createElement('DIV');
-  div2.innerHTML = 'second div!!';
-  div2.classList.add('div-2');
-  document.getElementsByTagName('body')[0].appendChild(div2);
+  let name = 'Jon';
+  let nameString = `My name is ${name}.`;
+
+  createStuff('h5', nameString, 'div-2');
 })();
