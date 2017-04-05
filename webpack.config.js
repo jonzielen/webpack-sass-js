@@ -59,10 +59,9 @@ const config = [{
   plugins: [
     new webpack.optimize.UglifyJsPlugin({
         compress: {
-            warnings: false
+          warnings: false
         },
-        comments: false,
-        beautify: false
+        comments: false
     })
   ]
 }];
