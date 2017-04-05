@@ -14,6 +14,6 @@
 
   createStuff('h5', nameString, 'div-2');
 
-  const sayHello = name => `Hello ${name}!`;
+  const sayHello = name => console.log(`Hello ${name}!`);
   sayHello(name);
 })();
