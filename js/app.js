@@ -13,4 +13,7 @@
   let nameString = `My name is ${name}.`;
 
   createStuff('h5', nameString, 'div-2');
+
+  const sayHello = name => `Hello ${name}!`;
+  sayHello(name);
 })();
