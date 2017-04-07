@@ -23,13 +23,28 @@ const config = [{
           loader: "css-loader",
           options: {
             minimize: true
+          },
+          options: {
+            alias: {
+              "../fonts/bootstrap": "bootstrap-sass/assets/fonts/bootstrap"
+            }
           }
         }, {
-          loader: "sass-loader"
+          loader: "sass-loader",
+          options: {
+            includePaths: [
+              path.resolve('./node_modules/bootstrap-sass/assets/stylesheets')
+            ]
+          }
         }],
         // use style-loader in development
         fallback: "style-loader"
       })
+    }, {
+      test: /\.woff2?$|\.ttf$|\.eot$|\.svg$/,
+      use: [{
+        loader: "file-loader"
+      }]
     }]
   },
   plugins: [
