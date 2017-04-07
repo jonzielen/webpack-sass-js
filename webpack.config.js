@@ -15,6 +15,7 @@ const config = [{
     path: path.resolve(__dirname, 'css'),
     filename: '[name].css'
   },
+  devtool: "source-map",
   module: {
     rules: [{
       test: /\.scss$/,
@@ -22,6 +23,7 @@ const config = [{
         use: [{
           loader: "css-loader",
           options: {
+            sourceMap: true,
             minimize: true,
             alias: {
               '../fonts/bootstrap': 'bootstrap-sass/assets/fonts/bootstrap'
@@ -30,6 +32,7 @@ const config = [{
         }, {
           loader: "sass-loader",
           options: {
+            sourceMap: true,
             includePaths: [
               path.resolve('./node_modules/bootstrap-sass/assets/stylesheets')
             ]
