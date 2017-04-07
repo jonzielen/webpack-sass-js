@@ -22,11 +22,9 @@ const config = [{
         use: [{
           loader: "css-loader",
           options: {
-            minimize: true
-          },
-          options: {
+            minimize: true,
             alias: {
-              "../fonts/bootstrap": "bootstrap-sass/assets/fonts/bootstrap"
+              '../fonts/bootstrap': 'bootstrap-sass/assets/fonts/bootstrap'
             }
           }
         }, {
