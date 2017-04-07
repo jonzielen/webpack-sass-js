@@ -75,11 +75,7 @@ const config = [{
           loader: 'babel-loader'
         }
       }
-    ],
-    loaders: [{
-      test: /\.js$/,
-      loader: 'imports?jQuery=jquery,$=jquery,this=>window'
-    }]
+    ]
   },
   plugins: [
     new webpack.optimize.UglifyJsPlugin({
@@ -87,11 +83,6 @@ const config = [{
           warnings: false
         },
         comments: false
-    }),
-    new webpack.ProvidePlugin({
-      jQuery: 'jquery',
-      $: 'jquery',
-      jquery: 'jquery'
     })
   ]
 }];

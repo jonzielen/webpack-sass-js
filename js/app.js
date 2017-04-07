@@ -1,4 +1,4 @@
-const $ = require('jquery');
+require('jquery');
 
 (function() {
   function createStuff(elem = 'DIV', text, className) {
