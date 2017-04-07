@@ -4,16 +4,16 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 const extractSass = new ExtractTextPlugin({
-    filename: "[name].css"
+  filename: "[name].css"
 });
 
 const config = [{
   entry: {
-    main: './sass/sass.js'
+    main: './sass/main.scss'
   },
   output: {
     path: path.resolve(__dirname, 'css'),
-    filename: 'main.css'
+    filename: '[name].css'
   },
   module: {
     rules: [{
