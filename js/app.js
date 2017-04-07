@@ -1,3 +1,5 @@
+const $ = require('jquery');
+
 (function() {
   function createStuff(elem = 'DIV', text, className) {
     var newElem = document.createElement(elem);

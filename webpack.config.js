@@ -61,6 +61,11 @@ const config = [{
     path: path.resolve(__dirname, 'js'),
     filename: 'main.js'
   },
+  resolve: {
+    alias: {
+      jquery: 'jquery/src/jquery'
+    }
+  },
   module: {
     rules: [
       {
@@ -70,7 +75,11 @@ const config = [{
           loader: 'babel-loader'
         }
       }
-    ]
+    ],
+    loaders: [{
+      test: /\.js$/,
+      loader: 'imports?jQuery=jquery,$=jquery,this=>window'
+    }]
   },
   plugins: [
     new webpack.optimize.UglifyJsPlugin({
@@ -78,6 +87,11 @@ const config = [{
           warnings: false
         },
         comments: false
+    }),
+    new webpack.ProvidePlugin({
+      jQuery: 'jquery',
+      $: 'jquery',
+      jquery: 'jquery'
     })
   ]
 }];
