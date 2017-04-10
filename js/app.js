@@ -1,4 +1,5 @@
 require('jquery');
+require('bootstrap');
 
 (function() {
   function createStuff(elem = 'DIV', text, className) {

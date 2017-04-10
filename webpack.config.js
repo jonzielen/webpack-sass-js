@@ -63,7 +63,8 @@ const config = [{
   },
   resolve: {
     alias: {
-      jquery: 'jquery/src/jquery'
+      jquery: 'jquery/src/jquery',
+      bootstrap: 'bootstrap-sass/assets/javascripts/bootstrap'
     }
   },
   module: {
