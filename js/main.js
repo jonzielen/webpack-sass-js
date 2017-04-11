@@ -1664,7 +1664,7 @@ function(t,e,i){var n,s;n=[i(14)],void 0!==(s=function(t){"use strict";return t.
 /***/
 function(t,e,i){"use strict";
 //require('jquery');
-i(63),i(62),function(){function t(){var t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"DIV",e=arguments[1],i=arguments[2],n=document.createElement(t);n.innerHTML=e,n.classList.add(i),document.getElementsByTagName("body")[0].appendChild(n)}t("DIV","hello","jom"),t("DIV","second div!!","div-2");t("h5","My name is Jon.","div-2");!function(t){console.log("Hello "+t+"!")}("Jon"),$("body").append("<p>test</p>")}(),$(function(){$("#accordion").accordion(),$("#datepicker").datepicker()})},/* 62 */
+i(63),i(62),$(function(){$("#accordion").accordion(),$("#datepicker").datepicker()}),$(function(){function t(t){var i;try{i=$.datepicker.parseDate(e,t.value)}catch(t){i=null}return i}var e="mm/dd/yy",i=$("#from").datepicker({defaultDate:"+1w",changeMonth:!0,numberOfMonths:3}).on("change",function(){n.datepicker("option","minDate",t(this))}),n=$("#to").datepicker({defaultDate:"+1w",changeMonth:!0,numberOfMonths:3}).on("change",function(){i.datepicker("option","maxDate",t(this))})})},/* 62 */
 /***/
 function(t,e){/*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
