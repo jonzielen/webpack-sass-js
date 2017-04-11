@@ -1,4 +1,5 @@
-require('jquery');
+//require('jquery');
+require('jquery-ui');
 require('bootstrap');
 
 (function() {
@@ -19,4 +20,11 @@ require('bootstrap');
 
   const sayHello = name => console.log(`Hello ${name}!`);
   sayHello(name);
+
+  $('body').append('<p>test</p>');
 })();
+
+$(function() {
+  $("#accordion").accordion();
+  $("#datepicker").datepicker();
+});

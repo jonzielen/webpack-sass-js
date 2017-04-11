@@ -34,7 +34,8 @@ const config = [{
           options: {
             sourceMap: true,
             includePaths: [
-              path.resolve('./node_modules/bootstrap-sass/assets/stylesheets')
+              path.resolve('./node_modules/bootstrap-sass/assets/stylesheets'),
+              path.resolve('./node_modules/jquery-ui-dist')
             ]
           }
         }],
@@ -64,6 +65,7 @@ const config = [{
   resolve: {
     alias: {
       jquery: 'jquery/src/jquery',
+      'jquery-ui': 'jquery-ui-dist/jquery-ui.min',
       bootstrap: 'bootstrap-sass/assets/javascripts/bootstrap'
     }
   },
@@ -83,7 +85,7 @@ const config = [{
         compress: {
           warnings: false
         },
-        comments: false
+        comments: true
     })
   ]
 }];
