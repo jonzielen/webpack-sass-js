@@ -65,7 +65,8 @@ const config = [{
   resolve: {
     alias: {
       jquery: 'jquery/src/jquery',
-      'jquery-ui': 'jquery-ui-dist/jquery-ui.min',
+      'jquery-ui-dist': 'jquery-ui-dist/jquery-ui.min',
+      'jquery-ui-widgets': 'jquery-ui/ui/widgets',
       bootstrap: 'bootstrap-sass/assets/javascripts/bootstrap'
     }
   },

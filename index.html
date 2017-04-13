@@ -93,6 +93,30 @@
 <label for="to">to</label>
 <input type="text" id="to" name="to">
 
+<hr>
+
+<div class="row">
+  <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label>From</label>
+                                <div><input type="text" class="form-control js-search-start-date" name="searchStartDate" value="2017-04-12" placeholder="yyyy-mm-dd" /></div>
+                            </td>
+                            <td>
+                                <label>To</label>
+                                <div><input type="text" class="form-control js-search-end-date" name="searchEndDate" value="2017-04-26" placeholder="yyyy-mm-dd" /></div>
+                            </td>
+                            <td>
+                                <button class="btn btn-primary js-search-btn" onclick="findTickets(event)">Search</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+</div>
+
   <script src="/js/main.js"></script>
 </body>
 </html>
