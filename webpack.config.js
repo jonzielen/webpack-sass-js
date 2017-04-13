@@ -9,10 +9,10 @@ const extractSass = new ExtractTextPlugin({
 
 const config = [{
   entry: {
-    main: './sass/main.scss'
+    main: './public/src/sass/main.scss'
   },
   output: {
-    path: path.resolve(__dirname, 'css'),
+    path: path.resolve(__dirname, 'public/dist/css'),
     filename: '[name].css'
   },
   devtool: "source-map",
@@ -55,11 +55,11 @@ const config = [{
 },{
   entry: {
     main: [
-      './js/app.js'
+      './public/src/js/app.js'
     ]
   },
   output: {
-    path: path.resolve(__dirname, 'js'),
+    path: path.resolve(__dirname, 'public/dist/js'),
     filename: 'main.js'
   },
   resolve: {
