@@ -79,4 +79,4 @@ var common = (function(){
     };
 })();
 
-console.log(common);
+module.exports = common;

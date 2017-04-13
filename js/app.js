@@ -3,8 +3,7 @@ require('jquery-ui-dist');
 require('jquery-ui/ui/widgets/datepicker');
 require('bootstrap');
 const common = require('./common');
-
-console.log(common);
+//const common = require("imports?window=>{}!exports?window.common!./common.js");
 
 $(function() {
   $("#accordion").accordion();
