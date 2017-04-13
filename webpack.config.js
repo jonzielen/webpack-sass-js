@@ -86,7 +86,7 @@ const config = [{
         compress: {
           warnings: false
         },
-        comments: true
+        comments: false
     })
   ]
 }];
