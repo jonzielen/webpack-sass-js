@@ -1,0 +1,142 @@
+// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+$chartOrdersLineColor: #f86638;
+$chartIntlLineColor: #0b62a4;
+$chartDomesticLineColor: #7a92a3;
+$chartLocalLineColor: #4da74d;
+$chartLastMonthLineColor: #0b62a4;
+$chartDesktopLineColor: #0b62a4;
+$chartMobileLineColor: #7a92a3;
+$chartPopupHeading: #000000;
+
+$fontLight: #ffffff;
+
+$loginPanelHeaderBackgroundColor: #ffdc96;
+$loginPanelHeaderFontColor: #000000;
+
+
+.text-default{
+    color: $fontLight;
+}
+
+.login-panel-header{
+    background-color:$loginPanelHeaderBackgroundColor !important;
+    color:$loginPanelHeaderFontColor !important;
+}
+
+.table-borderless td{
+    border-top:none !important;
+}
+
+.form-horizontal .control-label{
+    text-align: left;
+}
+
+input[type=checkbox]{
+    box-shadow: none !important;
+}
+
+.loader-box{
+    width:2rem;
+    height:2rem;
+    display:inline-block;
+}
+
+.loader {
+  font-size: 0.2rem;
+  margin: 10px auto;
+  text-indent: -9999em;
+  width: 11em;
+  height: 11em;
+  border-radius: 50%;
+  background: #000000;
+  background: -moz-linear-gradient(left, #000000 10%, rgba(0,0,0, 0) 42%);
+  background: -webkit-linear-gradient(left, #000000 10%, rgba(0,0,0, 0) 42%);
+  background: -o-linear-gradient(left, #000000 10%, rgba(0,0,0, 0) 42%);
+  background: -ms-linear-gradient(left, #000000 10%, rgba(0,0,0, 0) 42%);
+  background: linear-gradient(to right, #000000 10%, rgba(0,0,0, 0) 42%);
+  position: relative;
+  -webkit-animation: load3 0.5s infinite linear;
+  animation: load3 0.5s infinite linear;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.loader:before {
+  width: 50%;
+  height: 50%;
+  background: #000000;
+  border-radius: 100% 0 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+}
+.loader:after {
+  background: #ffffff;
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  content: '';
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+@-webkit-keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.chart-panel                        { margin-top:10rem; }
+.chart-dashboard 					{ width:100%;position:absolute;bottom:-75px;left:0;right:0; }
+.chart-dashboard h3					{ font-size:24px;color:#5a5a5a;font-weight:bold;line-height:28px;margin:0; }
+.chart-dashboard ul 				{ list-style:none;padding-left:0px;height:85px;margin:0 60px;height:85px;border:1px solid #ccc;border-radius:6px;-webkit-border-radius:6px;-moz-border-radius:6px;overflow:hidden;font-family:"Droid Sans", Verdana, Arial; }
+.chart-dashboard li 				{ height:85px;width:33.3333%;float:left;background:url("/images/back-chart-dashboard.png") repeat-x left bottom;text-align:center; }
+
+.chart-dashboard li:first-child div	{ border-left:none; }
+.chart-dashboard li div				{ height:100%;padding-top:18px;border-left:1px solid #ccc;box-shadow:inset 0 0 0px 1px #FFFFFF;-moz-box-shadow:inset 0 0 0px 1px #FFFFFF;-webkit-box-shadow:inset 0 0 0px 1px #FFFFFF;overflow:hidden; }
+
+.chart-dashboard li span 			{ display:block;font-size:11px;color:#989898; }
+.chart-dashboard li span.positive	{ font-weight:bold;font-size:14px;color:#74ac12;padding-top:4px; }
+.chart-dashboard li span.negative	{ font-weight:bold;font-size:14px;color:#c61e1e;padding-top:4px; }
+
+.chart-popup-heading                { color: $chartPopupHeading; font-weight:bold; }
+.chart-line-orders                  { color: $chartOrdersLineColor; font-weight:bold; }
+.chart-line-intl                    { color: $chartIntlLineColor; font-weight:bold; }
+.chart-line-domestic                { color: $chartDomesticLineColor; font-weight:bold; }
+.chart-line-local                   { color: $chartLocalLineColor; font-weight:bold; }
+.chart-line-last-month              { color: $chartLastMonthLineColor; font-weight:bold; }
+.chart-line-desktop                 { color: $chartDesktopLineColor; font-weight:bold; }
+.chart-line-mobile                  { color: $chartMobileLineColor; font-weight:bold; }
+
+.tbl{
+    display: table;
+}
+
+.cell-middle{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.show-logo{
+    height: 250px;
+}

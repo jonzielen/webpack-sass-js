@@ -2,7 +2,15 @@
 require('jquery-ui-dist');
 require('jquery-ui/ui/widgets/datepicker');
 require('bootstrap');
+const checkout = require('./checkout');
 const common = require('./common');
+const custDetails = require('./customer-details');
+const customer = require('./customer-search');
+const dashboard = require('./dashboard');
+const orderDetails = require('./order-details');
+const order = require('./order-search');
+const review = require('./review');
+const show = require('./show-search');
 
 $(function() {
   $("#accordion").accordion();
